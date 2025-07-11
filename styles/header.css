@@ -1,0 +1,107 @@
+header {
+  background-image: url(../assets/images/Background_Intro.png);
+  background-size: cover;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 56px;
+  margin-top: 120px;
+}
+
+/* Apresentação */
+.intro {
+  color: var(--gray-200);
+  margin-bottom: 8px;
+  font: var(--Subtitle);
+  width: fit-content;
+  text-align: left;
+  margin: auto;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid var(--red);
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(60, end) forwards, blink 0.7s step-end infinite;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Cursor piscando */
+@keyframes blink {
+  0%, 100% { border-color: transparent }
+  50% { border-color: var(--red) }
+}
+
+/* Título principal */
+.title {
+  font: var(--Title-lg);
+  color: var(--gray-100);
+  margin-bottom: 20px;
+}
+
+/* Descrição */
+.description {
+  font: var(--text-sm);
+  margin: 0 auto 30px;
+  color: var(--gray-300);
+  max-width: 680px;
+  margin-bottom: 80px;
+}
+
+/* Ícones de tecnologias */
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 94px;
+}
+
+.tech-icons .icon {
+  background-color: var(--gray-400);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font: var(--text-md);  
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-100);
+  transition: background 0.3s;
+}
+
+.tech-icons .icon:hover {
+  background-color: var(--gray-300);
+  cursor: pointer;
+}
+
+.tech-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Seta para rolar a página */
+.scroll-down img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 130px;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+/* Animação suave */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}

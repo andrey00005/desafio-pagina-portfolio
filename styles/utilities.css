@@ -1,0 +1,5 @@
+/* Letra laranja */
+.highlight, .section-subtitle{
+  color: var(--red);
+  font-weight: bold;
+}
